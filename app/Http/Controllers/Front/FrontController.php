@@ -51,4 +51,9 @@ class FrontController extends Controller
     {
         return view('front.instructor.instructor-list-2');
     }
+
+    public function instructor_single()
+    {
+        return view('front.instructor.instructor-single');
+    }
 }
