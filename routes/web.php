@@ -20,5 +20,5 @@ use App\Http\Controllers\Front\FrontController;
 Route::controller(FrontController::class)->name('front.')->group(function () {
     Route::get('/', 'home')->name('home');
     Route::get('/about', 'about')->name('about');
+    Route::get('/blog', 'blog')->name('blog');
 });
-

@@ -16,4 +16,9 @@ class FrontController extends Controller
     {
         return view('front.about');
     }
+
+    public function blog()
+    {
+        return view('front.blog');
+    }
 }
