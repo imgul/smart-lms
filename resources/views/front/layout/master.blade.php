@@ -34,12 +34,23 @@
     </div>
     <!-- preloader end -->
 
-    @yield('content')
+    <main class="main-content">
+        @if (Route::currentRouteName() == 'front.home')
+            @include('front.layout.header')
+        @else
+            @include('front.layout.header-page')
+        @endif
 
-    <!-- JavaScript -->
-    <script src="unpkg.com/leaflet%401.7.1/dist/leaflet.js"></script>
-    <script src="{{ asset('js/vendors.js') }}"></script>
-    <script src="{{ asset('js/main.js') }}"></script>
+        <div class="content-wrapper  js-content-wrapper">
+            @yield('content')
+
+            @include('front.layout.footer')
+        </div>
+
+        <!-- JavaScript -->
+        <script src="unpkg.com/leaflet%401.7.1/dist/leaflet.js"></script>
+        <script src="{{ asset('js/vendors.js') }}"></script>
+        <script src="{{ asset('js/main.js') }}"></script>
 
 </body>
 
