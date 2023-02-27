@@ -1,4 +1,4 @@
-@extends('front.layout.master')
+@extends('front.layouts.master')
 
 @section('title', 'About - Smart LMS')
 

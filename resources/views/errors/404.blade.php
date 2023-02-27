@@ -1,4 +1,4 @@
-@extends('front.layout.master')
+@extends('front.layouts.master')
 
 @section('title', 'Not Found - Smart LMS')
 
@@ -20,7 +20,7 @@
                         <h2 class="text-35 lh-12 mt-5">Oops! It looks like you're lost.</h2>
                         <div class="mt-10">The page you're looking for isn't available. Try to search again<br> or
                             use the go to.</div>
-                        <button class="button -md -purple-1 text-white mt-20"><a href="/">Go Back To
+                        <button class="button -md -purple-1 text-white mt-20"><a href="{{ route('front.home') }}">Go Back To
                                 Homepage</a></button>
                     </div>
                 </div>

@@ -36,15 +36,15 @@
 
     <main class="main-content">
         @if (Route::currentRouteName() == 'front.home')
-            @include('front.layout.header')
+            @include('front.layouts.header')
         @else
-            @include('front.layout.header-page')
+            @include('front.layouts.header-page')
         @endif
 
         <div class="content-wrapper  js-content-wrapper">
             @yield('content')
 
-            @include('front.layout.footer')
+            @include('front.layouts.footer')
         </div>
 
         <!-- JavaScript -->
