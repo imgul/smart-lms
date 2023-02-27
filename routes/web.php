@@ -28,4 +28,5 @@ Route::controller(FrontController::class)->name('front.')->group(function () {
     Route::get('/lesson-single', 'lesson_single')->name('lesson-single');
     Route::get('/instructors', 'instructors')->name('instructors');
     Route::get('/instructor/{id}', 'instructor_single')->name('instructor-single');
+    Route::get('/become-instructor', 'become_instructor')->name('become-instructor');
 });
