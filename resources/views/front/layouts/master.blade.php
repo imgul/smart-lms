@@ -41,7 +41,8 @@
             @include('front.layouts.header-page')
         @endif
 
-        <div class="content-wrapper  js-content-wrapper">
+        <div class="content-wrapper js-content-wrapper">
+
             @yield('content')
 
             @include('front.layouts.footer')
