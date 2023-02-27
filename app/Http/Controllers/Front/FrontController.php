@@ -31,4 +31,9 @@ class FrontController extends Controller
     {
         return view('front.contact');
     }
+
+    public function courses()
+    {
+        return view('front.course.courses-list-6');
+    }
 }

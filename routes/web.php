@@ -23,4 +23,5 @@ Route::controller(FrontController::class)->name('front.')->group(function () {
     Route::get('/blog', 'blog')->name('blog');
     Route::get('/blog-single', 'blog_single')->name('blog-single');
     Route::get('/contact', 'contact')->name('contact');
+    Route::get('/courses', 'courses')->name('courses');
 });
